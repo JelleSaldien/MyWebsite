@@ -12,9 +12,10 @@
   .header {
     padding: 80px;
     text-align: center;
-    background: #1abc9c;
+    background: #1E64C8;
     color: white;
   }
+
   
   /* Increase the font size of the heading */
   .header h1 {
@@ -89,7 +90,28 @@
     width: 100%;
     padding: 20px;
   }
+ 
+  .image-container {
+    width: 100%;
+    max-width: 300px; /* Change this value to adjust the maximum width of the image */
+    float: left;
+    margin-right: 20px; /* Add some margin to create some space between the image and other content */
+
+
+  }
   
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20%; /* Add this property to make the image rounded */
+  }
+  
+  p {
+    clear: both; /* Add this property to make sure the text appears under the image */
+  }
+
+
   /* Footer */
   .footer {
     padding: 20px;
