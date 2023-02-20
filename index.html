@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
 
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="files/js/googlesheetimport.js"></script>
+    <script src="files/js/googlechartimport.js"></script>
+
 </head>
 
 <body>
@@ -15,31 +20,35 @@
         <a href="#">Link1</a>
         <a href="#">Link2</a>
         <a href="#">Link3</a>
-        <a href="#">Link4</a>
+        <a href="#AboutMe">About Me</a>
     </div>
 
     <div class="header">
         <h1>Emerging Technolgies 2023</h1>
-        <p>The central website for the coding4designers as part of the course on Emerging Technologies 2023.
-        </p>
+        <h5>The central website for the coding4designers as part of the course on Emerging Technologies 2023.
+        </h5>
     </div>
-
-
-
     <div class="row">
         <div class="side">
-            <h2>About Me</h2>
-            <a href="https://www.linkedin.com/in/jellesaldien"> <h5>Prof. dr. Jelle Saldien</h5></a>
-            <div class="image-container">
-                <img src="files/img/Bloovi_400x400.jpg" alt="Jelle Saldien">
-            </div>
-            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-            <h3>More Text</h3>
-            <p>Lorem ipsum dolor sit ame.</p>
-            <div class="fakeimg" style="height:60px;">Image</div><br>
-            <div class="fakeimg" style="height:60px;">Image</div><br>
-            <div class="fakeimg" style="height:60px;">Image</div>
+            <section class="chapter" id="AboutMe">
+                <h2>About Me</h2>
+                <div class="image-container">
+                    <img src="files/img/Bloovi_400x400.jpg" alt="Jelle Saldien"><br><a class="imgtitle"
+                        href="https://www.linkedin.com/in/jellesaldien" target="_blank">Prof. dr. Jelle Saldien</a>
+                </div>
+
+                <p>Jelle has a master in Engineering ELA-ICT and Product development. Furthermore he obtained a PhD in
+                    Engineering Sciences on the topic of the design of Social Robots.</p>
+            </section>
+            <section class="chapter" id="MyStudents">
+                <h2>My Students</h2>
+                <p>Here you can find the links to websites of the students:</p>
+                <div id="links"></div>
+
+            </section>
         </div>
+
+
         <div class="main">
             <h2>TITLE HEADING</h2>
             <h5>Title description, Dec 7, 2017</h5>
@@ -49,18 +58,20 @@
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                 ullamco.</p>
             <br>
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Sep 2, 2017</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco.</p>
+            <h2>The Kahoot scores</h2>
+            <!-- <div id="chart"></div> -->
+
+            <div id="chart_div"></div>
+            <p>A realtime-chart generator based on JavaScript and Google Chart pulls in the data from google
+                spreadsheet:</p>
+
         </div>
     </div>
 
     <div class="footer">
-        <h2>Footer</h2>
+        <img src="files/img/Logo_UGent.png" alt="UGent Logo">
+        <p>&copy; 2023 Jelle Saldien</p>
+        <img src="files/img/Logo_imec.png" alt="imec Logo">
     </div>
 
 </body>
