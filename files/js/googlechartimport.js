@@ -3,6 +3,10 @@
 google.charts.load('current', {'packages':['bar']});
 google.charts.setOnLoadCallback(drawChart);
 
+var chart;
+var options;
+var data;
+
 function drawChart() {
   var queryString = encodeURIComponent('SELECT A, C, D'); // Replace A and B with the column headers in your spreadsheet
   var query = new google.visualization.Query(
@@ -11,20 +15,20 @@ function drawChart() {
 }
 
 function handleQueryResponse(response) {
-  var data = response.getDataTable();
-  var options = {
+  data = response.getDataTable();
+  options = {
     chart: {
       title: 'The Kahoot EmTech Quiz Scores',
     },
     bars: 'horizontal', // Change to 'vertical' if you want vertical bars
     stacked: true,
   };
-  var chart = new google.charts.Bar(document.getElementById('chart_div'));
- 
-  function resizeChart() {
-    chart.draw(data, options);
-  }
+  chart = new google.charts.Bar(document.getElementById('chart_div'));
+  chart.draw(data, options);
+  
+}
 
-  window.addEventListener('resize', resizeChart);
-  resizeChart();
+function resizeChart() {
+  chart = new google.charts.Bar(document.getElementById('chart_div'));
+  chart.draw(data, options);
 }
