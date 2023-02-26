@@ -42,6 +42,9 @@ a:visited {
   /* adjust this value to match the height of your navigation bar to make sure it does not overlap your content */
 }
 
+.chapter #Coding4designers {
+  align-items: center;
+}
 
 /* Style the top navigation bar */
 .navbar {
@@ -124,7 +127,7 @@ a:visited {
   float: left;
   margin-right: 20px;
   /* Add some margin to create some space between the image and other content */
-  margin-bottom: 2%;
+  margin-bottom: 3%;
 }
 
 .imgtitle {
@@ -134,11 +137,21 @@ a:visited {
 }
 
 img {
-  display: block;
+  display: inline;
   max-width: 100%;
   height: auto;
-  border-radius: 15%;
+  border-radius: 5%;
   /* Add this property to make the image rounded */
+
+}
+
+.Midjourney-img {
+  margin: auto;
+  display: inline-block;
+  max-width: 49%;
+  height: auto;
+  /* Add this property to make the image rounded */
+  padding-block: 10px;
 }
 
 p {
