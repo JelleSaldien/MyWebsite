@@ -11,16 +11,28 @@
     <script src="https://apis.google.com/js/api.js"></script>
     <script src="files/js/googlesheetimport.js"></script>
     <script src="files/js/googlechartimport.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
 
 </head>
 
 <body onresize="resizeChart()">
 
-    <div class="navbar">
+    <div class="navbar" id="myTopnav">
+        <a href="#">Home</a>
         <a href="#Coding4designers">Coding4designers</a>
         <a href="#Kahoot">Kahoot</a>
         <a href="#Students">Students</a>
         <a href="#AboutMe">About Me</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
 
     <div class="header">
