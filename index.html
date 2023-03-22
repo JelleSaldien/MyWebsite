@@ -20,6 +20,9 @@
                 x.className = "navbar";
             }
         }
+        function myP5JSFunction(Exercise) {
+            document.getElementById("P5JSframe").src = "https://editor.p5js.org/jsaldien/full/" + Exercise;
+        }
     </script>
 
 </head>
@@ -104,6 +107,15 @@
                 <div id="chart_div"></div>
                 <p>A realtime-chart generator based on JavaScript and Google Chart pulls in the data from google
                     spreadsheet:</p>
+            </section>
+            <section class="chapter" id="P5JS">
+                <h2>The P5JS Robot Assignments</h2>
+                <div class="navbarP5JS" id="myP5JSbar">
+                    <a href="javascript:void(0);" onclick="myP5JSFunction('9QOYbzCPS')">Exercise 1</a>
+                    <a href="javascript:void(0);" onclick="myP5JSFunction('eSDHs4xUf')">Exercise 2</a>
+                </div>
+                <iframe id="P5JSframe" src="https://editor.p5js.org/jsaldien/full/9QOYbzCPS" width="100%"
+                    height="600"></iframe>
             </section>
         </div>
     </div>
